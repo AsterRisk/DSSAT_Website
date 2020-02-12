@@ -1,5 +1,5 @@
 <?php
-    $results = "Parish:".$_POST["parish"]."Coordinates:".$_POST["coordinates"]."Crop:".$_POST["crop"]."Cultivar:".$_POST["cultivar"];
+    $results = "Parish: ".$_POST["parish"]."\nCoordinates: ".$_POST["coordinates"]."\nCrop: ".$_POST["crop"]."\nCultivar: ".$_POST["cultivar"]."\nIrrigated?: ".$_POST["irrigated"]."\nIrrigation Schedule: ".$_POST["irrig"];
     echo "<h3>".$results."</h3>";
 ?>
 
