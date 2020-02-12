@@ -113,4 +113,14 @@ function guessLocation(position){
     var coords = document.getElementById("coordinates-label");
     coords.innerHTML = '<input type="text" class="form-control" placeholder="" value = '+location[0]+','+location[1]+' hidden>'
     map.innerHTML = '<iframe width="350" height="350" frameborder="0" style="border:0"src="https://www.google.com/maps/embed/v1/place?q='+position.coords.latitude+'%2C%20'+position.coords.longitude+'&key=AIzaSyCSxoHvjnVjOz3moQqkhXnASOWYaezedpE" allowfullscreen></iframe>';
+    var irrigated = document.getElementByID("irrigated");
+    var irrig = document.getElementByID("irrig");
+    if((irrig.value == "N/A") || (irrig.value == ""))
+    {
+        irrigated.setAttribute("value", "Rainfed");
+    }
+    else
+    {
+        irrigated.setAttribute("value", "Irrigated");
+    }
   }
